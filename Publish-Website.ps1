@@ -17,10 +17,10 @@ $currentStatus = [string] (& git status -s)
 
 if ($currentStatus -ne [string]::Empty) {
     Write-Host -ForegroundColor Red 'Error: There must be no changes in the branch';
-    # exit;
+    exit;
 }
 
 (& git branch -D master >$null 2>&1)
-(& git subtree split --prefix public -b master)
-(& git push -f origin master:master)
-(& git branch -D master)
+(& git subtree split --prefix public -b master >$null 2>&1)
+(& git push -f origin master:master >$null 2>&1)
+(& git branch -D master >$null 2>&1)
