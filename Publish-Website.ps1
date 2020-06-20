@@ -20,8 +20,7 @@ if ($currentStatus -ne [string]::Empty) {
     # exit;
 }
 
-(& git branch -D master)
+(& git branch -D master >$null 2>&1)
 (& git subtree split --prefix public -b master)
-(& git add public -f && git commit -m 'Add /public/')
 (& git push -f origin master:master)
 (& git branch -D master)
