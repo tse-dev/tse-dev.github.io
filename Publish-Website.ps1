@@ -15,7 +15,7 @@ if (-Not (Test-Path -Path 'public')) {
 
 $currentStatus = [string] (& git status -s)
 
-if ($currentStatus -ne [string]::Empty) {
+if ($currentStatus -ne $null) {
     Write-Host -ForegroundColor Red 'Error: There must be no changes in the branch';
     exit;
 }
