@@ -8,10 +8,10 @@ if ($currentBranch -ne 'develop') {
     exit;
 }
 
-if (-Not (Test-Path -Path 'public')) {
-    Write-Host -ForegroundColor Red "Error: The folder 'public' does not exist. Have you built the website using the 'npm run build' command?";
-    exit;
-}
+# if (-Not (Test-Path -Path 'public')) {
+#     Write-Host -ForegroundColor Red "Error: The folder 'public' does not exist. Have you built the website using the 'npm run build' command?";
+#     exit;
+# }
 
 $currentStatus = [string] (& git status -s)
 
@@ -28,11 +28,14 @@ if (-Not ([string]::IsNullOrWhiteSpace($currentStatus))) {
 (& git checkout -b build >$null 2>&1)
 (& npm run clean)
 (& npm run build)
-(& git add public -f)
+(& git add public -f >$null 2>&1)
+(& git commit -m 'Add website build files in /public/' >$null 2>&1)
 
 (& git subtree split --prefix public -b master >$null 2>&1)
 
 (& git push -f origin master:master >$null 2>&1)
+
+(& git checkout develop >$null 2>&1)
 
 # Final cleanup of branches facilitating build and publish
 (& git branch -D master >$null 2>&1)
