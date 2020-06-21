@@ -43,6 +43,7 @@ class Listing extends React.Component {
           <div className="posts-container">
             <Helmet title={config.siteTitle} />
             <SEO />
+            <h1>listing.jsx listing</h1>
             <PostListing postEdges={postEdges} />
           </div>
           {this.renderPaging()}
@@ -75,6 +76,7 @@ export const listingQuery = graphql`
             tags
             cover
             date
+            pageType
           }
         }
       }

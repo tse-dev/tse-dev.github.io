@@ -15,6 +15,7 @@ class Landing extends React.Component {
           <div className="posts-container">
             <Helmet title={config.siteTitle} />
             <SEO />
+            <h1>landing.jsx listing</h1>
             <PostListing postEdges={postEdges} />
           </div>
         </div>
@@ -42,6 +43,7 @@ export const pageQuery = graphql`
             tags
             cover
             date
+            pageType
           }
         }
       }

@@ -1,9 +1,10 @@
 ---
-title: "Big Test Updated"
+title: "Big Test Again"
 cover: "5.jpg"
 category: "moar"
 date: "2018-03-01"
 slug: "Big-Sample_Test"
+pageType: main
 tags:
     - test
     - huge
