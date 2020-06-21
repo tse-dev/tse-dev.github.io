@@ -23,6 +23,7 @@ class PostListing extends React.Component {
     const postList = this.getPostList();
     return (
       <div>
+        <h1>PostListing.jsx</h1>
         {/* Your post list here. */
         postList.map(post => (
           <Link to={post.path} key={post.title}>
