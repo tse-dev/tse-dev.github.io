@@ -27,7 +27,7 @@ export default class PostTemplate extends React.Component {
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
           <div>
-            <h1>{post.title}</h1>
+            <h1>post.jsx - {post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
 
             <Footer config={config} />
