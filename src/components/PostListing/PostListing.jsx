@@ -7,10 +7,7 @@ class PostListing extends React.Component {
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        cover: postEdge.node.frontmatter.cover,
         title: postEdge.node.frontmatter.title,
-        pageType: postEdge.node.frontmatter.pageType,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
@@ -27,7 +24,7 @@ class PostListing extends React.Component {
         {/* Your post list here. */
         postList.map(post => (
           <Link to={post.path} key={post.title}>
-            <h1>{post.title} - {post.pageType}</h1>
+            <h1>{post.title}</h1>
           </Link>
         ))
 }
