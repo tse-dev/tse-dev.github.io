@@ -17,9 +17,7 @@ class Footer extends Component {
         <div className="notice-container">
           <h4>{copyright}</h4>
 
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
+          {/* <Link to={url}> <button>Subscribe</button> </Link> */}
         </div>
       </footer>
     );
