@@ -20,7 +20,20 @@ if (-Not ([string]::IsNullOrWhiteSpace($currentStatus))) {
     exit;
 }
 
+# Remove local branches if they exist; we'll re-cut them from current HEAD
 (& git branch -D master >$null 2>&1)
+(& git branch -D build >$null 2>&1)
+
+# Checkout build branch, clean, build, add /public/ to version control
+(& git checkout -b build >$null 2>&1)
+(& npm run clean)
+(& npm run build)
+(& git add public -f)
+
 (& git subtree split --prefix public -b master >$null 2>&1)
+
 (& git push -f origin master:master >$null 2>&1)
+
+# Final cleanup of branches facilitating build and publish
 (& git branch -D master >$null 2>&1)
+(& git branch -D build >$null 2>&1)
