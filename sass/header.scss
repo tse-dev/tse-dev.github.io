@@ -1,0 +1,130 @@
+body > header {
+  background-color: $primary-colour;
+  position: relative;
+  height: $header-height;
+  padding: 1rem;
+  z-index: 30;
+
+  &>h1 {
+    color: $white;
+    font-size: 1.5rem;
+    position: relative;
+    text-align: left;
+    white-space: nowrap;
+  }
+}
+
+
+label[for="main-navigation-checkbox"] {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: $header-height;
+  position: absolute;
+  width: $header-height;
+  margin-left: auto;
+  z-index: 20;
+  top: 0;
+  right: 0;
+
+  &>span {
+    background-color: currentColor;
+    display: block;
+    height: 2px;
+    left: calc(50% - 16px);
+    position: absolute;
+    transform-origin: center;
+    transition-duration: 250ms;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: ease-out;
+    width: 32px;
+  }
+
+  & > span:nth-child(1) {
+    top: calc(50% - 9px);
+  }
+
+  & > span:nth-child(2) {
+    top: calc(50% - 1.5px);
+  }
+
+  & > span:nth-child(3) {
+    top: calc(50% + 6px);
+  }
+}
+
+#main-navigation-checkbox {
+  display: none;
+
+  &:checked + header > label[for="main-navigation-checkbox"] {
+    & span:nth-child(1) {
+      transition-delay: 100ms;
+      transition-duration: 300ms;
+      transform: translateY(7.5px) rotate(45deg);
+    }
+
+    & span:nth-child(2) {
+      transition-delay: 0;
+      transition-duration: 200ms;
+      transition-timing-function: ease-in;
+      opacity: 0;
+    }
+
+    & span:nth-child(3) {
+      transition-delay: 100ms;
+      transition-duration: 300ms;
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+  }
+
+  & + header + aside {
+    display: none;
+
+    & nav > ul {
+      list-style: none;
+      padding-inline-start: 0;
+    }
+  }
+
+  &:checked + header + aside {
+    background-color: $primary-colour;
+    display: block;
+    font-size: 1.5rem;
+    height: 100vh;
+    padding: 25vh 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    & ul li {
+      padding: 0.5em;
+      list-style: none;
+      text-align: center;
+    }
+
+    & a {
+      color: #fff;
+      display: block;
+      padding: 0.5em;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+    }
+    
+    & + main {
+      display: none;
+    }
+  }
+}
+
+
+
+@media (min-width: 430px) {
+  body>header>h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}

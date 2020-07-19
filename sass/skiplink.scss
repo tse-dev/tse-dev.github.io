@@ -1,0 +1,13 @@
+body nav[aria-label="skip links navigation"] {
+  background-color: lightyellow;
+  position: absolute;
+  z-index: 100;
+  top: 1em;
+  left: 1em;
+
+  & > a:focus {
+    color: $primary-colour;
+    display: block;
+    padding: 1em;
+  }
+}
