@@ -122,10 +122,10 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   min-height: 100vh;
-  transform: translate3d(0em, 0, 0);
-  -ms-transform: translate3d(0em, 0, 0);
-  -moz-transform: translate3d(0em, 0, 0);
-  -webkit-transform: translate3d(0em, 0, 0);
+  transform: translate3d(-20em, 0, 0);
+  -ms-transform: translate3d(-20em, 0, 0);
+  -moz-transform: translate3d(-20em, 0, 0);
+  -webkit-transform: translate3d(-20em, 0, 0);
 }
 
 p {
