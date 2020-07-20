@@ -13,8 +13,123 @@
     <meta name="theme-color" content="#1F262A" />
     <link rel="apple-touch-icon" sizes="192x192" href="/logos/logo-192.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="/logos/logo-512.png" />
-    
+
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+        :root {
+            --primary-color: #3a4052;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-weight: 300;
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 0.8em;
+            line-height: 1.2;
+        }
+
+        @media (min-width: 360px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (min-width: 500px) {
+            h1 {
+                font-size: 3em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 5em;
+            }
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            h1 {
+                font-size: 8em;
+            }
+
+            h2 {
+                font-size: 3em;
+            }
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #3a4052;
+            padding: 0 20px;
+        }
+
+        main section {
+            color: #fff;
+            z-index: 100;
+        }
+
+        .photo-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: var(--primary-color) url('./images/5.jpg') no-repeat center center/cover;
+        }
+
+        .photo-container:after {
+            content: '';
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,56 +137,15 @@
         <p role="alert">This website needs JavaScript to work properly.</p>
     </noscript>
 
-    <nav aria-label="skip links navigation" tabindex="-1">
-        <a href="#main-content" class="sr-only">Skip to main content</a>
-    </nav>
+    <main>
+        <div class="photo-container"></div>
 
-    <input type="checkbox" id="main-navigation-checkbox" tabindex="0" aria-labelledby="main-navigation-checkbox-label" />
+        <section>
+            <h1>Top Shot Engineering</h1>
 
-    <header>
-        <h1>Top Shot Engineering</h1>
-        <label id="main-navigation-checkbox-label" for="main-navigation-checkbox" aria-label="Main menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </label>
-    </header>
-
-    <aside>
-        <nav aria-label="Main website navigation">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Custom firearms</a></li>
-                <li><a href="#">Turning targets</a></li>
-                <li><a href="#">Metallic Silhouette</a></li>
-                <li><a href="#">Range design</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main id="main-content">
-        <h1>Main</h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris posuere porttitor luctus. Aenean ultricies diam vitae semper bibendum. Proin ultrices tortor ac libero rhoncus, nec facilisis massa luctus. Proin dictum rutrum tortor at luctus. Quisque tempor imperdiet mollis. Maecenas sit amet ex ultrices, hendrerit nulla tincidunt, posuere justo. Pellentesque at massa cursus, tincidunt quam eu, bibendum diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam in lacus sit amet massa porttitor dictum. Etiam imperdiet nisl sit amet tellus finibus, ac facilisis dolor eleifend. Sed eu turpis quis libero sollicitudin gravida. Donec orci odio, dapibus sed ligula euismod, commodo dapibus est. Cras dictum sem non ipsum vulputate, sed sodales ipsum iaculis. Duis id semper lectus. Nunc pellentesque nisl libero, ut tempor est condimentum nec.</p>
+            <h2>New website coming soon</h2>
+        </section>
     </main>
-
-    <footer>
-        <h1>Footer</h1>
-    </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function (event) {
-            document.getElementsByTagName('html')[0].classList.add('js');
-        });
-    </script>
 </body>
 
 </html>
