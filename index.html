@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charSet="utf-8" />
@@ -26,14 +26,14 @@
         <a href="#main-content" class="sr-only">Skip to main content</a>
     </nav>
 
-    <input type="checkbox" id="main-navigation-checkbox" />
+    <input type="checkbox" id="main-navigation-checkbox" tabindex="0" aria-labelledby="main-navigation-checkbox-label" />
 
     <header>
         <h1>Top Shot Engineering</h1>
-        <label for="main-navigation-checkbox" aria-label="Click here to view main website navigation overlay">
-            <span></span>
-            <span></span>
-            <span></span>
+        <label id="main-navigation-checkbox-label" for="main-navigation-checkbox" aria-label="Main menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
         </label>
     </header>
 

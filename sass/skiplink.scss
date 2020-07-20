@@ -6,7 +6,7 @@ body nav[aria-label="skip links navigation"] {
   left: 1em;
 
   & > a:focus {
-    color: $primary-colour;
+    color: $grey800;
     display: block;
     padding: 1em;
   }

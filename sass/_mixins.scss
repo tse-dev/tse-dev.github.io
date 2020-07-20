@@ -1,6 +1,115 @@
+$easing: ease-out !default;
+$speed: 86ms !default;
+
 @mixin offcanvas($lenX) {
   transform: translate3d($lenX, 0, 0);
   -ms-transform: translate3d($lenX, 0, 0);
   -moz-transform: translate3d($lenX, 0, 0);
   -webkit-transform: translate3d($lenX, 0, 0);
+}
+
+@mixin hamburger($dimensions) {
+  cursor: pointer;
+  display: block;
+  height: $dimensions;
+  position: relative;
+  width: $dimensions;
+
+  span {
+    background-color: currentColor;
+    display: block;
+    height: 2px;
+    left: calc(50% - 16px);
+    position: relative;
+    transform-origin: center;
+    transition-duration: $speed;
+    transition-property: background-color, opacity, transform;
+    transition-timing-function: $easing;
+    width: 32px;
+
+    &:nth-child(1) {
+      top: calc(50% - 6px);
+    }
+    &:nth-child(2) {
+      top: calc(50% - 1px);
+    }
+    &:nth-child(3) {
+      top: calc(50% + 4px);
+    }
+  }
+
+  &:hover {
+    background-color: $grey100;
+  }
+}
+
+@mixin hamburgerActive() {
+  span {
+    &:nth-child(1) {
+      // transform: translateY(5px) rotate(45deg);
+      // transition-delay: 100ms;
+      // transition-duration: 300ms;
+      transform: translateY(7px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      // transform: translateY(-5px) rotate(-45deg);
+      // transition-delay: 100ms;
+      // transition-duration: 300ms;
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+@mixin hamburgerFocus() {
+  background-color: $grey100;
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin sr-only() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@mixin sr-only-focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
 }
