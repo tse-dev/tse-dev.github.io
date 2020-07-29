@@ -1,7 +1,6 @@
-body>footer:last-of-type {
+.content-wrapper footer {
   background-color: $grey800;
   color: $white;
   position: relative;
   height: $footer-height;
-  width: 100%;
 }

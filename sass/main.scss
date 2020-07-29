@@ -24,18 +24,17 @@ $footer-height: 10em;
 }
 
 body {
-    background-color: $grey100;
+    // background-color: $grey100;
     font-family: $font-stack;
     font-size: $body-font-size;
     min-height: 100vh;
-    // @include offcanvas(-20em);
 }
 
 p {
     margin: 1em 0.5em;
 }
 
-main:first-of-type {
+.content-wrapper main:first-of-type {
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     padding-bottom: var(--neg-footer-height);
 }
