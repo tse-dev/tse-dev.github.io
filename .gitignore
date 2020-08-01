@@ -63,3 +63,12 @@ bundle-stats.json
 
 # Ignore photos
 photos/
+
+# Ignore bulma
+bulma/
+
+# Ignore /experimental/
+experimental/
+
+# Ignore aspnet_client
+aspnet_client/
