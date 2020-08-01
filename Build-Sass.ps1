@@ -1,1 +1,1 @@
-sass .\sass\_all.sass .\style.css --no-source-map
+sass .\sass\style.scss .\style.css --no-source-map
