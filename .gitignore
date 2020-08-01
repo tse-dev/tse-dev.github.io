@@ -68,7 +68,7 @@ bundle-stats.json
 bulma/
 
 # Ignore /experimental/
-experimental/
+# experimental/
 
 # Ignore aspnet_client
 aspnet_client/
