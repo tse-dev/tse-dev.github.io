@@ -62,7 +62,7 @@ bundle-stats.json
 .DS_Store
 
 # Ignore photos
-photos/
+# photos/
 
 # Ignore bulma
 bulma/
