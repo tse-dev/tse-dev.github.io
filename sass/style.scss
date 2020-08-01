@@ -6,64 +6,91 @@
 
 // $navbar-item-hover-background-color: #fff;
 
-$navbar-burger-color: #fff;
+// $navbar-burger-color: #fff;
 // $navbar-box-shadow-color: #fff;
 
 $navbar-height: 5rem;
 
-// @import "../bulma/bulma-0.9.0/bulma.sass";
-@import "../bulma/bulma-0.9.0/sass/utilities/_all";
+@import "../bulma/bulma-0.9.0/bulma.sass";
+// @import "../bulma/bulma-0.9.0/sass/utilities/_all";
 
-@import "../bulma/bulma-0.9.0/sass/base/_all";
-@import "../bulma/bulma-0.9.0/sass/elements/_all";
+// @import "../bulma/bulma-0.9.0/sass/base/_all";
+// @import "../bulma/bulma-0.9.0/sass/elements/_all";
 // @import "../bulma/bulma-0.9.0/sass/form/_all";
-@import "../bulma/bulma-0.9.0/sass/components/_all";
+// @import "../bulma/bulma-0.9.0/sass/components/_all";
 // @import "../bulma/bulma-0.9.0/sass/grid/_all";
 // @import "../bulma/bulma-0.9.0/sass/helpers/_all";
-@import "../bulma/bulma-0.9.0/sass/layout/_all";
+// @import "../bulma/bulma-0.9.0/sass/layout/_all";
 
 .hero {
-  &.hero-img:after {
-    content: '';
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
+  &.has-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-background {
     position: absolute;
-  }
-}
-
-@include mobile {
-  @media (orientation: landscape) {
-    .hero {
-      &.hero-img {
-        background: url("../photos/custom-pistol-768w-432h.png") no-repeat center center/cover;
-      }
-    }
-  }
-  @media (orientation: portrait) {
-    .hero {
-      &.hero-img {
-        background: url("../photos/custom-pistol-1350w-1363h.png") no-repeat center center/cover;
-      }
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    &.is-transparent {
+      opacity: 0.3;
     }
   }
 }
 
-@include tablet {
-  .hero {
-    &.hero-img {
-      background: url("../photos/custom-pistol-1024w-576h.png") no-repeat center center/cover;
-    }
-  }
-}
 
-@include desktop {
-  .hero {
-    &.hero-img {
-      background: url('../photos/custom-pistol-1920w-1080h.png') no-repeat center center/cover;
-    }
+// .hero {
+//   &.hero-img:after {
+//     content: '';
+//     z-index: 0;
+//     height: 100%;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0.7);
+//     position: absolute;
+//   }
+// }
+
+// @include mobile {
+//   @media (orientation: landscape) {
+//     .hero {
+//       &.hero-img {
+//         background: url("../photos/custom-pistol-768w-432h.png") no-repeat center center/cover;
+//       }
+//     }
+//   }
+//   @media (orientation: portrait) {
+//     .hero {
+//       &.hero-img {
+//         background: url("../photos/custom-pistol-1350w-1363h.png") no-repeat center center/cover;
+//       }
+//     }
+//   }
+// }
+
+// @include tablet {
+//   .hero {
+//     &.hero-img {
+//       background: url("../photos/custom-pistol-1024w-576h.png") no-repeat center center/cover;
+//     }
+//   }
+// }
+
+// @include desktop {
+//   .hero {
+//     &.hero-img {
+//       background: url('../photos/custom-pistol-1920w-1080h.png') no-repeat center center/cover;
+//     }
+//   }
+// }
+
+.navbar-burger {
+  color: rgba(255, 255, 255, 0.7);
+  &:hover {
+    background-color: #292929;
+    color: #fff;
   }
 }
