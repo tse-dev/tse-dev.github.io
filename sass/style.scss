@@ -40,6 +40,18 @@ $navbar-height: 5rem;
   }
 }
 
+.grid {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (min-width: 769px) {
+  .grid {
+      grid-gap: 1em;
+  }
+}
+
 
 // .hero {
 //   &.hero-img:after {

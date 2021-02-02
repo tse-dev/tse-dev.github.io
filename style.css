@@ -10213,6 +10213,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   opacity: 0.3;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (min-width: 769px) {
+  .grid {
+    grid-gap: 1em;
+  }
+}
 .navbar-burger {
   color: rgba(255, 255, 255, 0.7);
 }

@@ -15,26 +15,6 @@
     <link rel="apple-touch-icon" sizes="512x512" href="../../logos/logo-512.png" />
 
     <link rel="stylesheet" href="../../style.css" />
-
-    <style>
-        /* .photo {
-            height: 100%;
-            width: 100%;
-            max-height: 512px;
-        } */
-
-        .grid {
-            display: grid;
-            grid-gap: 0.5em;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-
-        @media (min-width: 769px) {
-            .grid {
-                grid-gap: 1em;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -47,7 +27,7 @@
     <section class="hero is-fullheight is-dark has-background">
         <div class="hero-head">
             <nav class="navbar is-transparent is-spaced" aria-label="main site navigation">
-                <div class="container is-widescreen">
+                <div class="container is-fluid">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="/experimental/">Home</a>
                         <a class="navbar-item" href="/experimental/products">Products</a>
@@ -60,29 +40,25 @@
             alt="Custom sport pistol frame machined using CNC mill" />
 
         <div class="hero-body">
-            <div class="container">
-                <h1 class="title has-text-centered">Products</h1>
+            <div class="container is-fluid">
+                <h1 class="title has-text-centered">Top Shot Engineering Products</h1>
                 <p class="subtitle has-text-centered">We manufacture a variety of high-quality parts using our 4th axis CNC machine.</p>
             </div>
         </div>
     </section>
 
-    <section class="hero is-medium has-background-lighter">
+    <section class="hero is-medium">
         <div class="hero-body">
-            <div class="container">
+            <div class="container is-fluid">
                 <div class="columns is-vcentered">
                     <div class="column is-one-third">
                         <h2 class="title has-text-centered">Barrels</h2>
                         <p class="subtitle has-text-centered">We produce barrels for a variety of popular firearms including the 1911</p>
                     </div>
                     <div class="column grid">
-                        <img src="/photos/barrels1-512w-512h.jpg" />
-                        <img src="/photos/barrels2-512w-512h.jpg" />
+                        <img src="/photos/barrels1-512w-512h.jpg" alt="5 pistol barrels arranged in a line awaiting final stage of machining" />
+                        <img src="/photos/barrels2-512w-512h.jpg" alt="9 finished stainless steel pistol barrels laid out vertically" />
                     </div>
-                    <!-- <div class="column has-text-centered">
-                        <img src="../../photos/turning-targets-2.jpg"
-                        alt="Custom sport pistol frame machined using CNC mill" />
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -90,42 +66,45 @@
 
     <section class="hero is-medium has-background-grey-lighter">
         <div class="hero-body">
-            <div class="container">
+            <div class="container is-fluid section has-text-centered">
+                <h2 class="title">CZ Assemblies</h2>
+                <p class="subtitle">Description here</p>
+            </div>
+            <div class="container is-fluid">
                 <div class="columns is-vcentered is-flex-direction-row-reverse">
-                    <div class="column is-one-third">
-                        <h2 class="title has-text-centered">CZ Assemblies</h2>
+                    <div class="column has-text-centered">
+                        <img src="/photos/cz-assembly1-512w-512h.jpg" alt="CZ assembly with slide, slide racker and barrel attached photographed from rear" />
                     </div>
-                    <div class="columns">
-                        <div class="column has-text-centered">
-                            <img src="/photos/cz-assembly1-512w-512h.jpg" />
-                        </div>
-                        <div class="column has-text-centered">
-                            <img src="/photos/cz-assembly2-512w-512h.jpg" />
-                        </div>
+                    <div class="column has-text-centered">
+                        <img src="/photos/cz-assembly2-512w-512h.jpg" alt="CZ assembly frame without slide and barrel photographed from side" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <div class="tile is-ancestor">
-            <section class="tile is-parent is-8">
-                <div class="tile is-child has-text-centered">
-                    <h2 class="title has-text-centered">Guide rods</h2>
-                    <img src="/photos/guide-rod1-512w-366h.jpg" />
+    <section class="hero is-fullheight is-dark">
+        <img class="hero-background is-transparent" src="/photos/shroud-1920w-1080h.jpg" alt="Custom sport pistol frame machined using CNC mill" />
+    </section>
+
+    <section class="hero is-medium is-white">
+        <div class="hero-body">
+            <div class="container is-fluid section has-text-centered">
+                <h2 class="title">Shrouds and shroud wings</h2>
+                <p class="subtitle">Description here</p>
+            </div>
+            <div class="container is-fluid">
+                <div class="columns is-vcentered is-flex-direction-row-reverse">
+                    <div class="column has-text-centered">
+                        <img src="/photos/shroud-wings1.jpg" alt="Pistol shroud wings" />
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="/photos/shroud2.jpg" alt="Pistol shroud mounted on CNC machine" />
+                    </div>
                 </div>
-            </section>
-            <section class="tile is-parent is-vertical">
-                <div class="tile is-child">
-                    <h2 class="title has-text-centered">Shrouds and shroud wings</h2>
-                    <img src="/photos/shroud-wings1.jpg" />
-                    <img src="/photos/shroud1.jpg" />
-                    <img src="/photos/shroud2.jpg" />
-                </div>
-            </section>
+            </div>
         </div>
-    </div>
+    </section>
 
 
 
