@@ -5,7 +5,7 @@
     <meta charSet="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Top Shot Engineering - New website coming soon" />
+    <meta name="description" content="Top Shot Engineering" />
 
     <title>Top Shot Engineering</title>
 
@@ -14,138 +14,102 @@
     <link rel="apple-touch-icon" sizes="192x192" href="/logos/logo-192.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="/logos/logo-512.png" />
 
-    <link rel="stylesheet" href="style.css" />
-
-    <style>
-        :root {
-            --primary-color: #3a4052;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            line-height: 1.5;
-        }
-
-        h1 {
-            font-weight: 300;
-            font-size: 1.5em;
-            line-height: 1.5;
-        }
-
-        h2 {
-            font-weight: 200;
-            font-size: 0.8em;
-            line-height: 1.2;
-        }
-
-        @media (min-width: 360px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.2em;
-            }
-        }
-
-        @media (min-width: 500px) {
-            h1 {
-                font-size: 3em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-        }
-
-        @media (min-width: 768px) {
-            h1 {
-                font-size: 4em;
-            }
-
-            h2 {
-                font-size: 2.5em;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            h1 {
-                font-size: 5em;
-            }
-
-            h2 {
-                font-size: 2.5em;
-            }
-        }
-
-        @media (min-width: 1920px) {
-            h1 {
-                font-size: 8em;
-            }
-
-            h2 {
-                font-size: 3em;
-            }
-        }
-
-        main {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #3a4052;
-            padding: 0 20px;
-        }
-
-        main section {
-            color: #fff;
-            z-index: 100;
-        }
-
-        .photo-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background: var(--primary-color) url('./images/5.jpg') no-repeat center center/cover;
-        }
-
-        .photo-container:after {
-            content: '';
-            z-index: 1;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.7);
-            position: absolute;
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-    <noscript>
-        <p role="alert">This website needs JavaScript to work properly.</p>
-    </noscript>
+    <noscript><p role="alert">This website needs JavaScript to work properly.</p></noscript>
 
-    <main>
-        <div class="photo-container"></div>
+    <!-- <nav aria-label="skip links navigation" tabindex="-1">
+        <a href="#main-content" class="sr-only">Skip to main content</a>
+    </nav> -->
 
-        <section>
-            <h1>Top Shot Engineering</h1>
+    <section class="hero is-fullheight is-dark has-background">
+        <div class="hero-head">
+            <nav class="navbar is-transparent is-spaced" aria-label="main site navigation">
+                <div class="container is-fluid">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">Home</a>
+                        <a class="navbar-item" href="/products">Products</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <img class="hero-background is-transparent" src="/images/5.jpg" alt="Semi-automatic pistol posed with magazine, two hollow point cartridges, and a container of cartridges in the background" style="opacity:0.6" />
 
-            <h2>New website coming soon</h2>
-        </section>
-    </main>
+        <div class="hero-body">
+            <div class="container is-fluid has-text-centered">
+                <h1 class="title">Top Shot Engineering</h1>
+                <p class="subtitle">We specialise in high-quality custom CNC machining and firearms</p>
+            </div>
+        </div>
+
+        <div class="hero-foot"></div>
+    </section>
+
+    <section class="hero is-medium has-background-lighter">
+        <div class="hero-body">
+            <div class="container is-fluid">
+                <div class="columns is-vcentered">
+                    <div class="column is-one-third">
+                        <h2 class="title">Turning targets</h2>
+                        <p class="subtitle">We can manufacture turning targets for your club's needs</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="/photos/turning-targets-2.jpg" alt="Custom sport pistol frame machined using CNC mill" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight is-dark has-background" id="custom-firearms">
+        <div class="hero-head"></div>
+
+        <img class="hero-background is-transparent" src="/photos/custom-pistol-1920w-1080h.png"
+            alt="Custom sport pistol frame machined using CNC mill" />
+
+        <div class="hero-body">
+            <div class="container is-fluid has-text-centered">
+                <h2 class="title">Custom firearms</h2>
+                <p class="subtitle">We can produce custom firearms to your specifications</p>
+            </div>
+        </div>
+
+        <div class="hero-foot"></div>
+    </section>
+
+    <section class="hero is-medium has-background-lighter">
+        <div class="hero-body">
+            <div class="container is-fluid has-text-centered">
+                <h2 class="title">Contact</h2>
+                <p class="subtitle">We can be reached via email: info@topshotengineering.com.au</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TO DO: Add section covering TSE-products, and link to second page that provides a more comprehensive list of products -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementsByTagName('html')[0].classList.add('js');
+
+            const burgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            burgers.forEach(burger => {
+                burger.addEventListener('click', () => {
+                    const targetElementId = burger.dataset.target;
+                    const targetElement = document.getElementById(targetElementId);
+
+                    burger.classList.toggle('is-active');
+                    targetElement.classList.toggle('is-active');
+
+                    const isActive = burger.classList.contains('is-active');
+                    burger.setAttribute('aria-expanded', isActive);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
