@@ -1,0 +1,26 @@
+<picture>
+<!-- sig-p320-portrait-320w.webp -->
+<!-- sig-p320-portrait-375w.webp -->
+<!-- sig-p320-portrait-414w.webp -->
+<!-- sig-p320-portrait-768w.webp -->
+<!-- sig-p320-landscape-568w.webp -->
+<!-- sig-p320-landscape-667w.webp -->
+<!-- sig-p320-landscape-812w.webp -->
+<!-- sig-p320-landscape-1024w.webp -->
+<!-- sig-p320-landscape-1366w.webp -->
+<!-- sig-p320-landscape-1440w.webp -->
+<!-- sig-p320-landscape-1680w.webp -->
+<!-- sig-p320-landscape-1920w.webp -->
+<!-- sig-p320-portrait-320w.jpg -->
+<!-- sig-p320-portrait-375w.jpg -->
+<!-- sig-p320-portrait-414w.jpg -->
+<!-- sig-p320-portrait-768w.jpg -->
+<!-- sig-p320-landscape-568w.jpg -->
+<!-- sig-p320-landscape-667w.jpg -->
+<!-- sig-p320-landscape-812w.jpg -->
+<!-- sig-p320-landscape-1024w.jpg -->
+<!-- sig-p320-landscape-1366w.jpg -->
+<!-- sig-p320-landscape-1440w.jpg -->
+<!-- sig-p320-landscape-1680w.jpg -->
+<!-- sig-p320-landscape-1920w.jpg -->
+</picture>
