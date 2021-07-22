@@ -18,7 +18,9 @@
 </head>
 
 <body>
-    <noscript><p role="alert">This website needs JavaScript to work properly.</p></noscript>
+    <noscript>
+        <p role="alert">This website needs JavaScript to work properly.</p>
+    </noscript>
 
     <!-- <nav aria-label="skip links navigation" tabindex="-1">
         <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -42,7 +44,8 @@
         <div class="hero-body">
             <div class="container is-fluid">
                 <h1 class="title has-text-centered">Top Shot Engineering Products</h1>
-                <p class="subtitle has-text-centered">We manufacture a variety of high-quality parts using our four axis CNC machining centre</p>
+                <p class="subtitle has-text-centered">We manufacture a variety of high-quality parts using our four axis
+                    CNC machining centre. All of our products are designed and manufactured in-house.</p>
             </div>
         </div>
     </section>
@@ -53,11 +56,14 @@
                 <div class="columns is-vcentered">
                     <div class="column is-one-third">
                         <h2 class="title has-text-centered">Barrels</h2>
-                        <p class="subtitle has-text-centered">We produce barrels for a variety of popular firearms such as the 1911, SIG Sauer, CZ, and Tanfoglio</p>
+                        <p class="subtitle has-text-centered">We produce barrels for a variety of popular firearms such
+                            as the 1911, SIG Sauer, CZ, and Tanfoglio</p>
                     </div>
                     <div class="column grid">
-                        <img src="/photos/barrels1-512w-512h.jpg" width="512" height="512" alt="5 pistol barrels arranged in a line awaiting final stage of machining" />
-                        <img src="/photos/barrels2-512w-512h.jpg" width="512" height="512" alt="9 finished stainless steel pistol barrels laid out vertically" />
+                        <img src="/photos/barrels1-512w-512h.jpg" width="512" height="512"
+                            alt="5 pistol barrels arranged in a line awaiting final stage of machining" />
+                        <img src="/photos/barrels2-512w-512h.jpg" width="512" height="512"
+                            alt="9 finished stainless steel pistol barrels laid out vertically" />
                     </div>
                 </div>
             </div>
@@ -72,19 +78,23 @@
             <div class="container is-fluid">
                 <div class="columns is-vcentered is-flex-direction-row-reverse">
                     <div class="column has-text-centered">
-                        <img src="/photos/cz-assembly1-512w-512h.jpg" width="512" height="512" alt="CZ assembly with slide, slide racker and barrel attached photographed from rear" />
+                        <img src="/photos/cz-assembly1-512w-512h.jpg" width="512" height="512"
+                            alt="CZ assembly with slide, slide racker and barrel attached photographed from rear" />
                     </div>
                     <div class="column has-text-centered">
-                        <img src="/photos/cz-assembly2-512w-512h.jpg" width="512" height="512" alt="CZ assembly frame without slide and barrel photographed from side" />
+                        <img src="/photos/cz-assembly2-512w-512h.jpg" width="512" height="512"
+                            alt="CZ assembly frame without slide and barrel photographed from side" />
                     </div>
                 </div>
 
                 <div class="columns is-vcentered is-flex-direction-row-reverse">
                     <div class="column has-text-centered">
-                        <img src="/photos/shroud-wings1-512w-384h.jpg" width="512" height="384" alt="Pistol shroud wings" />
+                        <img src="/photos/shroud-wings1-512w-384h.jpg" width="512" height="384"
+                            alt="Pistol shroud wings" />
                     </div>
                     <div class="column has-text-centered">
-                        <img src="/photos/shroud2-512w-384h.jpg" width="512" height="384" alt="Pistol shroud mounted on CNC machine" />
+                        <img src="/photos/shroud2-512w-384h.jpg" width="512" height="384"
+                            alt="Pistol shroud mounted on CNC machine" />
                     </div>
                 </div>
             </div>
@@ -95,15 +105,21 @@
         <div class="hero-body">
             <div class="container is-fluid section has-text-centered">
                 <h2 class="title has-text-centered">Optic Slide Cuts</h2>
-                <p class="subtitle has-text-centered">We machine optic slide cuts and custom-made adapter plates for use in IPSC pistol events.</p>
+                <p class="subtitle has-text-centered">
+                    We machine optic slide cuts and custom-made adapter plates for use in IPSC pistol events.
+                    All of our slide cuts and adapter plates are made in-house right here in Newcastle NSW.
+                    We can produce these for a variety of pistols including CZ, Glock, SIG Sauer, Springfield, and 1911.
+                </p>
             </div>
             <div class="container is-fluid">
                 <div class="columns is-vcentered">
                     <div class="column has-text-centered">
-                        <img src="/photos/optic-slide-cut-1-512w-384h.jpg" width="512" height="384" alt="Optic slide cut adapter plate" />
+                        <img src="/photos/optic-slide-cut-1-512w-384h.jpg" width="512" height="384"
+                            alt="Optic slide cut adapter plate" />
                     </div>
                     <div class="column has-text-centered">
-                        <img src="/photos/optic-slide-cut-2-512w-384h.jpg" width="512" height="384" alt="Optic slide cut with mounted Holosun sight" />
+                        <img src="/photos/optic-slide-cut-2-512w-384h.jpg" width="512" height="384"
+                            alt="Optic slide cut with mounted Holosun sight" />
                     </div>
                 </div>
             </div>
@@ -129,6 +145,19 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        if (navigator && navigator.serviceWorker) {
+            navigator.serviceWorker
+                .register("../sw.js")
+                .then(function (serviceWorkerRegistration) {
+                    console.log('Service worker registration complete.');
+                })
+                .catch(function (reason) {
+                    console.log(reason);
+                });
+        }
     </script>
 </body>
 

@@ -1,5 +1,11 @@
 User-agent: *
-Disallow: */tags/
-Disallow: */categories/
-
-Sitemap: https://gatsby-advanced-starter-demo.netlify.com/sitemap.xml
+Disallow: /aspnet_client/
+Disallow: /bulma/
+Disallow: /sass/
+Disallow: /.editorconfig
+Disallow: /.gitignore
+Disallow: *.ps1$
+Disallow: /Notes.txt
+Disallow: /offline.html
+Disallow: *.md$
+Disallow: /Web.config

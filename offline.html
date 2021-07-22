@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Top Shot Engineering" />
+
+    <title>Top Shot Engineering | No internet connection</title>
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#1F262A" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/logos/logo-192.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/logos/logo-512.png" />
+
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <noscript>
+        <p role="alert">This website needs JavaScript to work properly.</p>
+    </noscript>
+
+    <section class="hero is-fullheight is-dark has-background">
+        <div class="hero-head">
+            <nav class="navbar is-transparent is-spaced" aria-label="main site navigation">
+                <div class="container is-fluid">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">Home</a>
+                        <a class="navbar-item" href="/products">Products</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container is-fluid has-text-centered">
+                <h1 class="title">No internet connection</h1>
+                <p class="subtitle">You currently have no internet connection. Please connect to the internet and try again.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        if (navigator && navigator.serviceWorker) {
+            navigator.serviceWorker
+                .register("sw.js")
+                .then(function (serviceWorkerRegistration) {
+                    console.log('Service worker registration complete.');
+                })
+                .catch(function (reason) {
+                    console.log(reason);
+                });
+        }
+    </script>
+</body>
+
+</html>
