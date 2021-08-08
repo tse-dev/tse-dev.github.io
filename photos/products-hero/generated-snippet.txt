@@ -1,0 +1,26 @@
+<picture>
+<!-- shroud-portrait-320w.webp -->
+<!-- shroud-portrait-375w.webp -->
+<!-- shroud-portrait-414w.webp -->
+<!-- shroud-portrait-768w.webp -->
+<!-- shroud-landscape-568w.webp -->
+<!-- shroud-landscape-667w.webp -->
+<!-- shroud-landscape-812w.webp -->
+<!-- shroud-landscape-1024w.webp -->
+<!-- shroud-landscape-1366w.webp -->
+<!-- shroud-landscape-1440w.webp -->
+<!-- shroud-landscape-1680w.webp -->
+<!-- shroud-landscape-1920w.webp -->
+<!-- shroud-portrait-320w.jpg -->
+<!-- shroud-portrait-375w.jpg -->
+<!-- shroud-portrait-414w.jpg -->
+<!-- shroud-portrait-768w.jpg -->
+<!-- shroud-landscape-568w.jpg -->
+<!-- shroud-landscape-667w.jpg -->
+<!-- shroud-landscape-812w.jpg -->
+<!-- shroud-landscape-1024w.jpg -->
+<!-- shroud-landscape-1366w.jpg -->
+<!-- shroud-landscape-1440w.jpg -->
+<!-- shroud-landscape-1680w.jpg -->
+<!-- shroud-landscape-1920w.jpg -->
+</picture>
