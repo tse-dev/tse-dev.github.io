@@ -2,6 +2,10 @@ $convert = "D:\Tools\ImageMagick-7.1.0-4-portable-Q16-HDRI-x64\convert.exe"
 $magick = "D:\Tools\ImageMagick-7.1.0-4-portable-Q16-HDRI-x64\magick.exe"
 $force = $true
 $quality = 95
+$relativeHrefPath = "/photos/products-hero"
+
+$imgStyle = "position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0.6;"
+$imgAltText = "Custom sport pistol frame mounted to CNC machine"
 
 $files = Get-ChildItem -Path .
 
@@ -95,23 +99,27 @@ $htmlLines += "<picture>"
 
 foreach ($width in $portraitWidths) {
     $fileName = "$($portraitFile.BaseName)-$($width)w.webp"
-    $htmlLines += "<!-- $fileName -->"
+    $htmlLines += "<source type=""image/webp"" media=""(max-width: $($width)px) and (orientation: portrait)"" srcset=""$relativeHrefPath/$fileName"">"
 }
 
 foreach ($width in $landscapeWidths) {
     $fileName = "$($landscapeFile.BaseName)-$($width)w.webp"
-    $htmlLines += "<!-- $fileName -->"
+    $htmlLines += "<source type=""image/webp"" media=""(max-width: $($width)px)"" srcset=""$relativeHrefPath/$fileName"">"
 }
 
 foreach ($width in $portraitWidths) {
     $fileName = "$($portraitFile.BaseName)-$($width)w$($portraitFile.Extension)"
-    $htmlLines += "<!-- $fileName -->"
+    $htmlLines += "<source media=""(max-width: $($width)px) and (orientation: portrait)"" srcset=""$relativeHrefPath/$fileName"">"
 }
 
 foreach ($width in $landscapeWidths) {
     $fileName = "$($landscapeFile.BaseName)-$($width)w$($landscapeFile.Extension)"
-    $htmlLines += "<!-- $fileName -->"
+    $htmlLines += "<source media=""(max-width: $($width)px)"" srcset=""$relativeHrefPath/$fileName"">"
 }
+
+$lastWidth = $landscapeWidths[-1]
+
+$htmlLines += "<img style=""$imgStyle"" src=""$relativeHrefPath/$($landscapeFile.BaseName)-$($lastWidth)w$($landscapeFile.Extension)"" loading=""lazy"" alt=""$imgAltText"" />"
 
 $htmlLines += "</picture>"
 
