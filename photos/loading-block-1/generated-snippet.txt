@@ -1,0 +1,27 @@
+<picture>
+<source type="image/webp" media="(max-width: 320px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-320w.webp">
+<source type="image/webp" media="(max-width: 375px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-375w.webp">
+<source type="image/webp" media="(max-width: 414px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-414w.webp">
+<source type="image/webp" media="(max-width: 768px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-768w.webp">
+<source type="image/webp" media="(max-width: 568px)" srcset="/photos/loading-block-1/loading-block-landscape-568w.webp">
+<source type="image/webp" media="(max-width: 667px)" srcset="/photos/loading-block-1/loading-block-landscape-667w.webp">
+<source type="image/webp" media="(max-width: 812px)" srcset="/photos/loading-block-1/loading-block-landscape-812w.webp">
+<source type="image/webp" media="(max-width: 1024px)" srcset="/photos/loading-block-1/loading-block-landscape-1024w.webp">
+<source type="image/webp" media="(max-width: 1366px)" srcset="/photos/loading-block-1/loading-block-landscape-1366w.webp">
+<source type="image/webp" media="(max-width: 1440px)" srcset="/photos/loading-block-1/loading-block-landscape-1440w.webp">
+<source type="image/webp" media="(max-width: 1680px)" srcset="/photos/loading-block-1/loading-block-landscape-1680w.webp">
+<source type="image/webp" media="(max-width: 1920px)" srcset="/photos/loading-block-1/loading-block-landscape-1920w.webp">
+<source media="(max-width: 320px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-320w.jpg">
+<source media="(max-width: 375px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-375w.jpg">
+<source media="(max-width: 414px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-414w.jpg">
+<source media="(max-width: 768px) and (orientation: portrait)" srcset="/photos/loading-block-1/loading-block-portrait-768w.jpg">
+<source media="(max-width: 568px)" srcset="/photos/loading-block-1/loading-block-landscape-568w.jpg">
+<source media="(max-width: 667px)" srcset="/photos/loading-block-1/loading-block-landscape-667w.jpg">
+<source media="(max-width: 812px)" srcset="/photos/loading-block-1/loading-block-landscape-812w.jpg">
+<source media="(max-width: 1024px)" srcset="/photos/loading-block-1/loading-block-landscape-1024w.jpg">
+<source media="(max-width: 1366px)" srcset="/photos/loading-block-1/loading-block-landscape-1366w.jpg">
+<source media="(max-width: 1440px)" srcset="/photos/loading-block-1/loading-block-landscape-1440w.jpg">
+<source media="(max-width: 1680px)" srcset="/photos/loading-block-1/loading-block-landscape-1680w.jpg">
+<source media="(max-width: 1920px)" srcset="/photos/loading-block-1/loading-block-landscape-1920w.jpg">
+<img style="position: absolute; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 0.6;" src="/photos/loading-block-1/loading-block-landscape-1920w.jpg" loading="lazy" alt="Revolver loading block" />
+</picture>
